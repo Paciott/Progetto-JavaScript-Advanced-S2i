@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="OL Book Advisor" />
+    <meta property="og:description" content="Discover your next reading." />
+    <meta property="og:image" content="https://i.ibb.co/rkNNK0q/OL-Book-Advisor.png"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/favicon-32x32.png">
+    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+    <title>OL - Book Advisor</title>
+  </head>
+
+  <body>
+    <header>
+      <h1> Open Library | Book Advisor</h1>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <h2>Discover your next reading.</h2>
+        <form action="" class="form-container">
+          <input
+            type="text"
+            id="site-search"
+            name="q"
+            placeholder="Search by subject: fantsy, adventure, love..."
+          />
+          <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>        
+      </div>
+
+      <div class="positioner">
+        <div class="loader hidden">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <ul class="list"></ul>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/20259037a0.js" crossorigin="anonymous"></script>
+    <!-- <script src="/src/js/index.js"></script> -->
+  </body>
+</html>
