@@ -29,3 +29,7 @@ Nel momento in cui viene avviata la ricerca è mostrato a schermo un feedback vi
 ## Link
 
 [Versione live del progetto - Netlify](https://s2i-javascript-advanced.netlify.app/)
+
+## Istruzioni per clonare
+
+Il progetto richiede Axios e altri pacchetti da npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.
