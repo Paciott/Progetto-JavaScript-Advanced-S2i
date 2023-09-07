@@ -16,6 +16,13 @@ const getData = async () => {
 
   // we take the keyword inserted by the user and adjust it for use it into the query
   let inputValue = input.value.trim().toLowerCase().split(" ").join("");
+
+  if(inputValue === "") {                           // if the user starts research without a keyword
+    errorP.innerText = "Please insert a keyword.";  // notify the user
+    document.body.appendChild(errorP);              
+    return;
+  };
+
   //start the loader animation
   loader.classList.toggle("hidden");
 
@@ -28,7 +35,7 @@ const getData = async () => {
     if (res.data.work_count !== 0) {        // if the request gives us back some works
       loader.classList.toggle("hidden");    // we stop the loader animation
       const works = res.data.works;
-      for (work of works) {                 // we create a card for every work given to us by the api call
+      for (let work of works) {                 // we create a card for every work given to us by the api call
         createCard(work);
       }
     } else {                                // if the request gives us back no works
@@ -37,6 +44,7 @@ const getData = async () => {
       document.body.appendChild(errorP);
     }
   } catch (e) {
+    loader.classList.toggle("hidden");
     errorP.innerText = "No match found.";
     document.body.appendChild(errorP);
     console.log("ERROR!", e);
