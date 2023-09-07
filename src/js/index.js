@@ -19,7 +19,8 @@ const getData = async () => {
 
   if(inputValue === "") {                           // if the user starts research without a keyword
     errorP.innerText = "Please insert a keyword.";  // notify the user
-    document.body.appendChild(errorP);              
+    document.body.appendChild(errorP);
+    input.value = "";              
     return;
   };
 
