@@ -16,8 +16,8 @@ Nel momento in cui viene avviata la ricerca è mostrato a schermo un feedback vi
 
 ## Screenshots
 
-![active]()
-![error]()
+![inactive](/src/images/Screenshot-inactive.png)
+![active](/src/images/Screenshot-active.png)
 
 ## Costruito con:
 
@@ -28,4 +28,4 @@ Nel momento in cui viene avviata la ricerca è mostrato a schermo un feedback vi
 
 ## Link
 
-[Versione live del progetto - Netlify]()
+[Versione live del progetto - Netlify](https://s2i-javascript-advanced.netlify.app/)
